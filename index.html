@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="block">
+      <h1>Find info about a country!</h1>
+      <p>
+        In this exercise you will have to implement a GraphQL call.
+        <br />
+        <br />
+        The goal is to type the
+        <a
+          target="_blank"
+          href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements"
+          >ISO A2 code</a
+        >
+        of a country (e.g. Germany is DE) and to display the characteristics of
+        this country below.
+        <br /><br />
+        You have the first steps of implementation in <strong>index.js</strong>.
+      </p>
+      <a class="link" href="https://countries.trevorblades.com/" target="_blank"
+        >Go to the API playground</a
+      >
+    </div>
+
+    <div class="block">
+      <form id="countries-search">
+        <input
+          type="text"
+          id="search"
+          name="search"
+          placeholder="Search..."
+          autocomplete="off"
+        />
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+
+    <div class="block">
+      <div id="countries-container"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
